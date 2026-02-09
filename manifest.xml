@@ -4,15 +4,15 @@
            xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
            xsi:type="TaskPaneApp">
-  <Id>61622329-8473-4560-84c4-722108169123</Id>
+  <Id>5490ff45-0902-4c28-971c-3b95ce081830</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Antigravity</ProviderName>
+  <ProviderName>LuisMaldonado</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Excel Com Add-in"/>
-  <Description DefaultValue="A custom functions add-in for Excel."/>
-  <IconUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <DisplayName DefaultValue="Excel Custom Functions"/>
+  <Description DefaultValue="Custom formulas for Excel."/>
+  <IconUrl DefaultValue="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
+  <HighResolutionIconUrl DefaultValue="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
+  <SupportUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
   <AppDomains>
     <AppDomain>https://luiscamaldonado.github.io/excelcom</AppDomain>
   </AppDomains>
@@ -28,10 +28,11 @@
       <Host xsi:type="Workbook">
         <DesktopFormFactor>
           <GetStarted>
-            <Title DefaultValue="Get started with your Excel add-in!"/>
-            <Description DefaultValue="Your add-in loaded successfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
-            <LearnMoreUrl DefaultValue="https://go.microsoft.com/fwlink/?linkid=276812"/>
+            <Title DefaultValue="Get started with Custom Functions"/>
+            <Description DefaultValue="Your add-in loaded successfully. Go to the HOME tab and check for the 'Show Taskpane' button."/>
+            <LearnMoreUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
           </GetStarted>
+          <FunctionFile resid="Functions.Url"/>
           <ExtensionPoint xsi:type="CustomFunctions">
             <Script>
               <SourceLocation resid="Functions.Script.Url"/>
@@ -44,48 +45,20 @@
             </Metadata>
             <Namespace resid="Functions.Namespace"/>
           </ExtensionPoint>
-          <ExtensionPoint xsi:type="PrimaryCommandSurface">
-            <CustomTab id="Contoso.Tab1">
-              <Label DefaultValue="Excel Com"/>
-              <Group id="Contoso.Group1">
-                <Label DefaultValue="General"/>
-                <Icon>
-                  <bt:Image size="16" resid="Icon.16x16"/>
-                  <bt:Image size="32" resid="Icon.32x32"/>
-                  <bt:Image size="80" resid="Icon.80x80"/>
-                </Icon>
-                <Control xsi:type="Button" id="Contoso.TaskpaneButton">
-                  <Label DefaultValue="Show Taskpane"/>
-                  <Supertip>
-                    <Title DefaultValue="Show Taskpane"/>
-                    <Description DefaultValue="Opens a pane displaying all available custom functions."/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16x16"/>
-                    <bt:Image size="32" resid="Icon.32x32"/>
-                    <bt:Image size="80" resid="Icon.80x80"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>ButtonId1</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
-                  </Action>
-                </Control>
-              </Group>
-            </CustomTab>
-          </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" resid="https://luiscamaldonado.github.io/excelcom/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" resid="https://luiscamaldonado.github.io/excelcom/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" resid="https://luiscamaldonado.github.io/excelcom/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" resid="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
+        <bt:Image id="Icon.32x32" resid="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
+        <bt:Image id="Icon.80x80" resid="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.js"/>
         <bt:Url id="Functions.Page.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
         <bt:Url id="Functions.Metadata.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.json"/>
+        <bt:Url id="Functions.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
