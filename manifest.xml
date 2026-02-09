@@ -10,17 +10,17 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Excel Com Add-in"/>
   <Description DefaultValue="A custom functions add-in for Excel."/>
-  <IconUrl DefaultValue="http://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="http://localhost:3000/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
-    <AppDomain>http://localhost:3000</AppDomain>
+    <AppDomain>https://luiscamaldonado.github.io/excelcom</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="http://localhost:3000/taskpane.html"/>
+    <SourceLocation DefaultValue="https://luiscamaldonado.github.io/excelcom/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -78,15 +78,15 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" resid="http://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" resid="http://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" resid="http://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" resid="https://luiscamaldonado.github.io/excelcom/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" resid="https://luiscamaldonado.github.io/excelcom/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" resid="https://luiscamaldonado.github.io/excelcom/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Functions.Script.Url" DefaultValue="http://localhost:3000/functions.js"/>
-        <bt:Url id="Functions.Page.Url" DefaultValue="http://localhost:3000/functions.html"/>
-        <bt:Url id="Functions.Metadata.Url" DefaultValue="http://localhost:3000/functions.json"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="http://localhost:3000/taskpane.html"/>
+        <bt:Url id="Functions.Script.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.js"/>
+        <bt:Url id="Functions.Page.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
+        <bt:Url id="Functions.Metadata.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.json"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="CONTOSO"/>
