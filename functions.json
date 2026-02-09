@@ -1,0 +1,25 @@
+{
+  "functions": [
+    {
+      "id": "NV",
+      "name": "NV",
+      "description": "Calcula el valor de venta: (NOVO_COSTO / NOVO_MARGEN) + 1",
+      "helpUrl": "https://www.contoso.com/help",
+      "parameters": [
+        {
+          "name": "NOVO_COSTO",
+          "description": "Costo del producto (numerico).",
+          "type": "number"
+        },
+        {
+          "name": "NOVO_MARGEN",
+          "description": "Margen de ganancia (porcentaje).",
+          "type": "number"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    }
+  ]
+}
