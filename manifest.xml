@@ -4,14 +4,14 @@
            xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
            xsi:type="TaskPaneApp">
-  <Id>5490ff45-0902-4c28-971c-3b95ce081830</Id>
+  <Id>5490ff45-0902-4c28-971c-3b95ce081831</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>LuisMaldonado</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Excel Custom Functions"/>
   <Description DefaultValue="Custom formulas for Excel."/>
-  <IconUrl DefaultValue="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
-  <HighResolutionIconUrl DefaultValue="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
+  <IconUrl DefaultValue="https://via.placeholder.com/32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://via.placeholder.com/64.png"/>
   <SupportUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
   <AppDomains>
     <AppDomain>https://luiscamaldonado.github.io/excelcom</AppDomain>
@@ -27,11 +27,6 @@
     <Hosts>
       <Host xsi:type="Workbook">
         <DesktopFormFactor>
-          <GetStarted>
-            <Title DefaultValue="Get started with Custom Functions"/>
-            <Description DefaultValue="Your add-in loaded successfully. Go to the HOME tab and check for the 'Show Taskpane' button."/>
-            <LearnMoreUrl DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.html"/>
-          </GetStarted>
           <FunctionFile resid="Functions.Url"/>
           <ExtensionPoint xsi:type="CustomFunctions">
             <Script>
@@ -50,9 +45,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" resid="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
-        <bt:Image id="Icon.32x32" resid="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
-        <bt:Image id="Icon.80x80" resid="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_16x1.svg"/>
+        <bt:Image id="Icon.16x16" resid="https://via.placeholder.com/16.png"/>
+        <bt:Image id="Icon.32x32" resid="https://via.placeholder.com/32.png"/>
+        <bt:Image id="Icon.80x80" resid="https://via.placeholder.com/80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Functions.Script.Url" DefaultValue="https://luiscamaldonado.github.io/excelcom/functions.js"/>
