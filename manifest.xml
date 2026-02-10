@@ -4,7 +4,7 @@
            xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
            xsi:type="TaskPaneApp">
-  <Id>6490ff45-0902-4c28-971c-3b95ce081999</Id>
+  <Id>71622329-8473-4560-84c4-722108169999</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>LuisMaldonado</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
